@@ -1,0 +1,33 @@
+body{
+    background: #ee9ca7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #ffdde1, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin:0;
+    padding:0;
+    min-height:100vh;
+}
+.btn{
+    border-radius:20px;
+    color:#fff;
+    font-size:0.9em;
+}
+.card {
+border-radius:12px;
+background-color: #f4f4f4;
+padding: 20px;
+margin-bottom: 10px;
+box-shadow:3px 5px 2px 2px rgba(0,0,0,0.5);
+
+
+}
+@media (min-width:768px){
+.card{
+    width:60% !important;
+}
+}
+.card-body{
+width:80%;
+}
+.btn{
+padding:10px;
+}
