@@ -9,7 +9,7 @@ function getQuote(){
 fetch("https://type.fit/api/quotes").then((response)=>response.json())
 .then((data)=>{
     quoteNumber=random(data.length);
-    quoteText.textContent=data[quoteNumber].text;
+    quoteText.textContent=" "+data[quoteNumber].text;
     quoteAuthor.textContent=data[quoteNumber].author;
 })
 }
