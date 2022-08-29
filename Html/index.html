@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Random Quotes Generator</title>
    <link rel="stylesheet" href="/Css/style.css">
+<script src="/Js/App.js" defer></script>
   </head>
   <body class="text-center d-flex justify-content-center align-items-center">
      <div class="container mx-auto " >
@@ -19,10 +20,12 @@
                 <div class="card-body mx-auto">
                   
                   <p class="card-text"><blockquote class="blockquote mb-0">
-                    <p> <i class="fa fa-quote-left"></i> Lorem, ipsum dolor sit amet consectetur 
+                   
+                  <p><i class="fa fa-quote-left"></i><span id="quoteText"> Lorem, ipsum dolor sit amet consectetur 
                         adipisicing elit. Ullam voluptatibus nobis quisquam
-                         ea optio inventore et magni harum tenetur tempore? <i class="fa fa-quote-right"></i></p>
-                    <footer class="blockquote-footer"><cite title="Source Title">Author</cite></footer>
+                         ea optio inventore et magni harum tenetur tempore? </span> <i class="fa fa-quote-right"></i></p>
+                       
+                    <footer class="blockquote-footer"><cite id="quoteAuthor"title="Source Title">Author</cite></footer>
                   </blockquote></p>
                   <button class="btn btn-success ">Generate Quote</button>
                 </div>
