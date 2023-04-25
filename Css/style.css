@@ -5,6 +5,7 @@ body{
     margin:0;
     padding:0;
     min-height:100vh;
+    position: relative;
    
 }
 h4{
@@ -25,14 +26,34 @@ h4{
     width:40%;
 }
 .card {
+position:relative;
 border-radius:12px;
 background-color: #f4f4f4;
 padding: 20px;
 margin-bottom: 10px;
 box-shadow:3px 5px 2px 2px rgba(0,0,0,0.5);
-
+width:80%;
 
 }
+.loader {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%);
+  border: 16px solid #f6f6f6; /* Light grey */
+  border-top: 16px solid #198754;; /* Blue */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1.2s linear infinite;
+}
+.none{
+    display:none;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+  }
 @media (min-width:1000px){
 .card{
     width:60% !important;
